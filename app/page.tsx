@@ -4,10 +4,12 @@ import Image from "next/image";
 export default function Home() {
   return (
     <section>
-      <div>
-        <h1 className="text-center text-3xl"> Hello from Muziko</h1>
-      </div>
       <ArtistHeader />
+      <div className="h-screen">
+        <h1 className="text-xl font-medium text-white">
+          Albums and Songs go here
+        </h1>
+      </div>
     </section>
   );
 }
