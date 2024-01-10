@@ -13,16 +13,16 @@ export const ArtistHeader = () => {
             className="h-full object-cover"
           />
         </div>
-        <div className="flex flex-col text-[#FA586A] justify-between min-h-[324px] h-full w-full p-6 pt-5">
-          <div className="flex justify-end">
+        <div className="flex flex-col text-white justify-between min-h-[324px] h-full w-full">
+          <div className="flex justify-end bg-black/40 py-3 px-6">
             <button className="cursor-pointer rounded-full">
               <span>
                 <MenuIcon className="h-7 w-7" />
               </span>
             </button>
           </div>
-          <div className="flex justify-between">
-            <h1 className="text-4xl font-bold text-white">Burna Boy</h1>
+          <div className="flex justify-between bg-black/40 py-3 px-6">
+            <h1 className="text-4xl font-bold">Burna Boy</h1>
             <button className="cursor-pointer rounded-full">
               <span>
                 <PlayIcon className="h-10 w-10" />
