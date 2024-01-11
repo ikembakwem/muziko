@@ -1,5 +1,5 @@
 import { ArtistHeader } from "@/components/artist-header";
-import Image from "next/image";
+import { NavItems } from "@components/navigation-items";
 
 export default function Home() {
   return (

@@ -2,12 +2,13 @@
 import { useState } from "react";
 import { MenuButton } from "./menu-button";
 import ProfileIcon from "@assets/icons/user.svg";
+import { NavContent } from "./navigation-content";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header>
-      <nav className="w-full fixed bg-black z-10">
+    <header className="relative">
+      <nav className="w-full asolute top-0 right-0 bg-black z-10">
         <div className="flex items-center justify-between mx-3">
           <div>
             <MenuButton
@@ -22,8 +23,15 @@ function Header() {
             <ProfileIcon className="h-7 w-7" />
           </div>
         </div>
+        <div
+          className={`absolute z-20 top-[44px] w-full bg-black ${
+            !isOpen ? "hidden" : ""
+          }`}
+        >
+          <NavContent />
+        </div>
       </nav>
-      <div className="h-[52px]"></div>
+      {/* Placeholder for fixed navbar */}
     </header>
   );
 }

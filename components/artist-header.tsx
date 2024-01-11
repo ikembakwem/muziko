@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import PlayIcon from "@assets/icons/play.svg";
+import PlayIcon from "@assets/icons/play-2.svg";
 import MenuIcon from "@assets/icons/menu.svg";
 
 export const ArtistHeader = () => {
@@ -15,7 +15,7 @@ export const ArtistHeader = () => {
         </div>
         <div className="flex flex-col text-white justify-between min-h-[324px] h-full w-full">
           <div className="flex justify-end bg-black/40 py-3 px-6">
-            <button className="cursor-pointer rounded-full">
+            <button className="cursor-pointer rounded-full bg-black/60 p-1">
               <span>
                 <MenuIcon className="h-7 w-7" />
               </span>
